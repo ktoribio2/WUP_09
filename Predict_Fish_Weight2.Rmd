@@ -9,8 +9,6 @@ output:
     toc_depth: 5
 ---
 
- setwd("C:/Users/16617/Documents/AVC/Math115/WUP_09")
-
 ```{r include=FALSE,echo=FALSE}
 require(tigerstats)
 require(tidyverse)
@@ -18,7 +16,7 @@ require(leaps)
 ```
 
 # Predicting Fish Weight
-## get data
+## Get data
 ```{r}
 fishData=read.csv("Fish.csv")
 ```
@@ -49,9 +47,16 @@ print(results)
 
 ```
 
+The best two variables to predict weight are height and width. 
 
 ### Best Two regressor model
 
+```{r}
+perchModel=lm(Weight~Height+Width, data=perch)
+summary(perchModel)
+```
+
+For the best model the adjusted r square was 0.94. 
 
 ## Pike
 ```{r}
