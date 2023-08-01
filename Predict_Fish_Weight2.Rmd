@@ -132,5 +132,4 @@ summary(RoachModel)
 The best model for the adjusted r square for Roach is 0.8482
 
 ## Final Summary Statements
-
-The best model for 
+Out of all the data we tried, from lowest to highest, roach is at 0.8482, then perch at 0.94 , and pike at 0.96. This is concluding that pike is the best out of the 3 models that we did since it was the highest value. 
